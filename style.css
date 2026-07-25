@@ -402,6 +402,7 @@ nav {
   transition: border-color 0.15s;
   text-decoration: none;
   color: inherit;
+  margin-bottom: 1.25rem;
 }
 
 .oss-hero:hover {
