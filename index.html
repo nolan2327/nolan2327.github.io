@@ -134,6 +134,7 @@
     }
 
     .home-footer {
+      position: relative;
       border-top: 1px solid var(--border);
       padding: 1.2rem 2rem;
       text-align: center;
@@ -141,6 +142,13 @@
       color: var(--text-muted);
       font-family: 'Nunito', sans-serif;
       letter-spacing: 0.04em;
+    }
+
+    .home-footer #theme-toggle {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .home-footer a {
@@ -177,10 +185,9 @@
 <nav class="home-nav">
   <div class="home-nav-left">
     <span class="home-nav-name"><span class="tilde">~</span>/nolan-quiroz</span>
-    <button id="theme-toggle" aria-label="Toggle theme"></button>
   </div>
   <div class="home-nav-right">
-    <a href="blog.html">blog</a>
+    <a href="blog.html">writing</a>
     <!-- <a href="projects.html">projects</a>-->
     <a href="opensource.html">open source</a>
   </div>
@@ -235,6 +242,7 @@
 
 <footer class="home-footer">
   <p>© 2026 nolan quiroz · vibe-coded with ❤️ <a href="https://pages.github.com" target="_blank"></a></p>
+  <button id="theme-toggle" aria-label="Toggle theme"></button>
 </footer>
 
 <script src="main.js"></script>

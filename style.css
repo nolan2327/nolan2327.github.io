@@ -499,6 +499,17 @@ footer {
   letter-spacing: 0.04em;
 }
 
+footer:has(#theme-toggle) {
+  position: relative;
+}
+
+footer:has(#theme-toggle) #theme-toggle {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 footer a { color: var(--text-muted); }
 footer a:hover { color: var(--accent); opacity: 1; }
 
